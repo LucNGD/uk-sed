@@ -1,0 +1,206 @@
+<!doctype html>
+<!--
+  Support and privacy page for UK SED.
+
+  Self-contained on purpose: no fonts, scripts, analytics or stylesheets are
+  fetched from anywhere, which is the least a page claiming to collect nothing
+  should manage. Nothing here can see who reads it.
+
+  Source of truth for the policy text is AppStore/PRIVACY.md in the app repo.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UK SED — support and privacy</title>
+<meta name="description" content="Support and privacy policy for UK SED, the Seafarers' Earnings Deduction day tracker. Your records stay on your device.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #1a1d21;
+    --muted: #5b6470;
+    --rule: #e3e7ec;
+    --accent: #0b3d7a;
+    --panel: #f5f7fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1419;
+      --ink: #e8ecf1;
+      --muted: #9aa5b1;
+      --rule: #242b33;
+      --accent: #7fb2f0;
+      --panel: #161c23;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1419;
+    --ink: #e8ecf1;
+    --muted: #9aa5b1;
+    --rule: #242b33;
+    --accent: #7fb2f0;
+    --panel: #161c23;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 5rem; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .3rem; letter-spacing: -.025em; }
+  h2 {
+    font-size: 1.25rem; margin: 2.6rem 0 .7rem; letter-spacing: -.01em;
+    padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.02rem; margin: 1.6rem 0 .5rem; }
+  p, li { margin: 0 0 .9rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); }
+  strong { font-weight: 650; }
+  .tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 2.2rem; }
+  .updated { color: var(--muted); font-size: .92rem; margin: -.3rem 0 1.4rem; }
+  .lede { font-size: 1.08rem; }
+  .card {
+    background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 14px; padding: 1.1rem 1.2rem; margin: 1.4rem 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .contact { font-size: 1.05rem; }
+  .note {
+    background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 1rem 1.1rem; margin: 2.8rem 0 0;
+    color: var(--muted); font-size: .94rem;
+  }
+  .note p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>UK SED</h1>
+<p class="tagline">A day tracker for the UK Seafarers' Earnings Deduction.</p>
+
+<h2 id="support">Support</h2>
+
+<p class="lede">If something is wrong, unclear, or counting a day you think it
+should not, write to me and say what you expected to see.</p>
+
+<p class="contact card"><strong>Contact:</strong>
+<a href="mailto:lucandjas@fyrstudios.org">lucandjas@fyrstudios.org</a></p>
+
+<p>It helps to include your iOS version and what the app showed, but a plain
+description of the problem is enough to start with. There is no account to look
+up, because the app has none, so I can only see what you tell me.</p>
+
+<h3>Before you write</h3>
+<ul>
+  <li><strong>Lost your records?</strong> If iCloud sync was on, turning it on
+  again on the new device restores them. If you exported a JSON backup, import
+  it under More.</li>
+  <li><strong>A number looks wrong?</strong> Open the ⓘ button on the Calendar
+  or Claim tab, or reopen the walkthrough from More. A day counts as absent
+  only if you were outside the UK at midnight, which surprises people more than
+  anything else in the app.</li>
+  <li><strong>Is this tax advice?</strong> No. The app counts days. Whether you
+  qualify depends on your employment, your vessel, your voyages and your
+  residence, none of which the app can check. Confirm your position with HMRC
+  or an accountant before you file.</li>
+</ul>
+
+<h2 id="privacy">Privacy policy</h2>
+<p class="updated">Last updated: 2 October 2026</p>
+
+<p class="lede">UK SED does not collect your data. There is no account, no
+sign-up, no analytics and no advertising. The app makes no network requests of
+its own, so nothing you enter is sent to me, and I have no way to read it.</p>
+
+<p>This section sets out what the app stores, where it goes, and the two cases
+where something leaves your phone. Both of those happen only because you ask
+for them.</p>
+
+<h3>What the app stores</h3>
+<p>Everything you enter is held in a single file on your device:</p>
+<ul>
+  <li><strong>Your days</strong>: a date, and whether you were inside or outside the UK</li>
+  <li><strong>Your notes</strong>: any text you add to a day, such as a vessel, a port or a flight number</li>
+  <li><strong>Your claim settings</strong>: adjustments you make on the Claim tab</li>
+  <li><strong>App settings</strong>: appearance, whether reminders are on, whether iCloud sync is on, and whether you have seen the disclaimer and the walkthrough</li>
+</ul>
+<p>The figures shown on the Home Screen widget are stored in a shared container
+as well, so the widget can read them. They stay on the device.</p>
+<p>The app asks for nothing else. It does not use your location, your contacts,
+your photos, your calendar, your microphone or your camera, and it has no
+access to them.</p>
+
+<h3>Where it goes</h3>
+<p><strong>Nowhere, by default.</strong> The file sits in the app's own storage
+on your phone. If you delete the app, iOS deletes the file with it.</p>
+<p>There are exactly two ways data leaves the device, and you control both.</p>
+
+<h3>iCloud sync, which is off by default</h3>
+<p>If you turn on iCloud sync under More, the app copies your record into your
+own iCloud account so your devices stay in step. This uses Apple's iCloud
+key-value storage. The data goes to <strong>your</strong> iCloud, under your
+Apple Account. It does not come to me, and it does not go to any third party. I
+cannot see it. Apple's handling of it is covered by
+<a href="https://www.apple.com/uk/legal/privacy/">Apple's privacy policy</a>.</p>
+<p>Turn the switch off and the app stops syncing.</p>
+
+<h3>Exports, which only happen when you tap Share</h3>
+<p>The app can produce two files: a PDF working sheet for your accountant, and
+a JSON backup of your record. Neither is created or sent automatically. When
+you export one, iOS hands you the standard share sheet and <strong>you</strong>
+choose where it goes: Mail, Messages, Files, AirDrop, or another app. Once it
+leaves, it is covered by whatever you sent it to, not by this policy.</p>
+<p>The working sheet contains your day counts, your voyage log and any notes
+you have written, because that is the point of it. Treat it as you would any
+other tax document.</p>
+
+<h3>Notifications</h3>
+<p>Reminders are local notifications, scheduled on the device by the app
+itself. They are off until you turn them on and grant permission, nothing about
+them is sent anywhere, and you can switch them off in the app or in iOS
+Settings.</p>
+
+<h3>Children</h3>
+<p>The app is rated 4+ and collects nothing from anyone, of any age.</p>
+
+<h3>Your rights</h3>
+<p>Because none of your data reaches me, there is nothing for me to hold,
+correct, export or delete on your behalf, and no data controller relationship
+arises over your record. You hold it yourself:</p>
+<ul>
+  <li><strong>To see or export it</strong>: use the backup export under More</li>
+  <li><strong>To delete it</strong>: delete the app, which removes the file. If you have used iCloud sync, turn the sync switch off first, or sign out of iCloud to stop it syncing further.</li>
+</ul>
+<p>If you have used iCloud sync, the copy in your own iCloud account is yours
+to manage through your Apple Account settings.</p>
+
+<h3>Tracking</h3>
+<p>UK SED does not track you. It contains no third-party SDKs, no analytics, no
+advertising identifiers and no tracking domains. The privacy manifests inside
+the app bundle declare the same thing, and the App Store listing records "Data
+Not Collected". This page does not track you either: it loads nothing from
+anywhere else, so no other party sees that you visited it.</p>
+
+<h3>Changes to this policy</h3>
+<p>If a future version of the app changes what it stores or where it goes, this
+page will be updated before that version ships, and the date above will change
+with it.</p>
+
+<h3>Questions about privacy</h3>
+<p><a href="mailto:lucandjas@fyrstudios.org">lucandjas@fyrstudios.org</a></p>
+
+<div class="note">
+  <p>UK SED is not affiliated with, endorsed by, or connected to HM Revenue &amp;
+  Customs. It is a planning aid, not tax advice.</p>
+</div>
+
+</main>
+</body>
+</html>
